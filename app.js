@@ -38311,7 +38311,7 @@
                   borderRadius: "0%",
                   ease: "power3.in",
                 });
-            });
+            }); 
         });
       }
       function h_() {
