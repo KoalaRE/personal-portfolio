@@ -8,28 +8,30 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>KoalaRE | Portfolio</title>
+    <title data-translate="sitetitle"></title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script defer="defer" src="./app.js"></script>
+    <script defer="defer" src="./language.js"></script>
     <link href="./main.css" rel="stylesheet" />
   </head>
   <body>
     <div class="loaderContainer">
       <span class="progress progress--number"></span>
-      <span class="progress progress--button">EXPLORE</span>
+      <span class="progress progress--button" data-translate="explore"></span>
     </div>
     <div class="cursor cursor--main">
       <div class="octagon"></div>
       <span class="cursorLoader"></span>
     </div>
     <div class="cursor cursor--indication">
-      <span>CLICK & HOLD</span>
+      <span data-translate="clickhold"></span>
     </div>
     <div class="cursor cursor--follower">
       <div class="octagon"></div>
     </div>
     <div class="cursor cursor--dot"></div>
     <div class="rotateMobileIndication">
-      <span>PLEASE TURN YOUR SCREEN</span>
+      <span data-translate="turnscreen"></span>
     </div>
     <div class="hamburgerWrapper">
       <span class="lineContainer lineContainer--1">
@@ -51,15 +53,21 @@
     </div>
     <div class="menuReveal">
       <div class="linkWrapper linkWrapper--1">
-        <li class="media media--0">CONTACT</li>
+        <li class="media media--0" data-translate="contact"></li>
         <li class="media media--thoma">
-          <a href="mailto:jeetpatel0070070@gmail.com">Email</a>
+          <a href="mailto:jeetpatel0070070@gmail.com" data-translate="email"></a>
         </li>
         <li class="media media--thoma">
-          <a href="https://github.com/MAGGIx1404" target="_blank">Github</a>
+          <a href="https://github.com/MAGGIx1404" target="_blank" data-translate="github"></a>
         </li>
         <li class="media media--thoma">
-          <a href="https://dribbble.com/yash12" target="_blank">Dribbble</a>
+          <a href="https://dribbble.com/yash12" target="_blank" data-translate="dribble"></a>
+        </li>
+        <li class="media media--credit">
+          <a href="https://github.com/MAGGIx1404" target="_blank" data-translate="imprint"></a>
+        </li>
+        <li class="media media--thoma">
+          <a href="https://dribbble.com/yash12" target="_blank" data-translate="privacy"></a>
         </li>
       </div>
       <div class="linkWrapper linkWrapper--2">
@@ -87,142 +95,96 @@
     <div id="app">
       <section class="container container--home">
         <div class="titleWrapper">
-          <span class="subtitle subtitle--1">WEB DEVELOPER</span>
-          <span class="title title--1">ANTON</span>
-          <span class="title title--2">KERZEL</span>
-          <span class="subtitle subtitle--2">PORTFOLIO</span>
+          <span class="subtitle subtitle--1" data-translate="home-subtitle-1"></span>
+          <span class="title title--1" data-translate="home-title-1"></span>
+          <span class="title title--2" data-translate="home-title-2"></span>
+          <span class="subtitle subtitle--2" data-translate="home-subtitle-2"></span>
         </div>
       </section>
       <section class="container container--about" data-scroll-section>
-        <span class="title title--hey">HEY</span>
+        <span class="title title--hey" data-translate="heySection-title"></span>
         <div class="aboutWrapper aboutWrapper--1">
-          <span class="scrollIndication scrollIndication--1">SCROLL DOWN</span>
-          <span class="scrollIndication scrollIndication--2">SCROLL DOWN</span>
+          <span class="scrollIndication scrollIndication--1">SCROLL</span>
+          <span class="scrollIndication scrollIndication--2">SCROLL</span>
           <div class="heySection">
-            <span>I'M Jeet Ramoliya.</span>
-            <span>A 17 YO Indian</span>
-            <span>Web Developer</span>
+            <span data-translate="heySection-1"></span>
+            <span data-translate="heySection-1"></span>
+            <span data-translate="heySection-1"></span>
           </div>
         </div>
         <span class="title title--about"></span>
         <div class="aboutWrapper aboutWrapper--2">
           <div class="aboutSection">
-            <p>
-              I’m passionate about creative and interactive development, design
-              and motion. I like to combine technology, design, and movement to
-              create innovative and immersive experiences.
-            </p>
-            <p>
-              Curious and autonomous by nature, I do a lot of monitoring and I’m
-              constantly seeking to learn new technologies, improve my design
-              and my way of coding, in order to make my passion my future
-              profession.
-            </p>
+            <p data-translate="aboutSection-1"></p>
+            <p data-translate="aboutSection-2"></p>
           </div>
           <img />
         </div>
         <span class="title title--course"></span>
         <div class="aboutWrapper aboutWrapper--3">
           <div class="courseSection courseSection--1">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-              autem itaque illo voluptatum nulla illum aut quos explicabo
-              aspernatur odio?
-            </p>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum
-              nostrum nesciunt enim et, maxime aut beatae soluta voluptatem
-              culpa, mollitia quas adipisci tenetur. Excepturi sequi ipsam
-              beatae repudiandae. Illum, reiciendis.
-            </p>
+            <p data-translate="courseSection-1-1"></p>
+            <p data-translate="courseSection-1-2"></p>
           </div>
           <div class="courseSection courseSection--2">
-            <!-- <p>
-              After I got graduated, I wanted to go to an audiovisual university
-              to pursue in motion design and animation. Even though I got
-              refused, I was still lucky enough to be accepted into an institute
-              of technology in telecommunication networks.
-            </p>
-            <p>
-              At first glance, the course did not interest me and I was planning
-              to reassign for the following year. I still played along and spent
-              all the year in this course, in which I met some great people and
-              brought new knowledge.
-            </p>
-            <p>
-              I learned a lot about network administration, object-oriented
-              programming, new knowledge in front-end development and the
-              discovery of back-end web development, with forms and database
-              design.
-            </p>
-            <p>
-              At the same time I continued making videos and editing, I learned
-              the basics of animation, and started manipulating keyframes,
-              curves and many other tools and plugins. Each one was even more
-              interesting than the last.
-            </p> -->
+            <p data-translate="courseSection-2-1"></p>
+            <p data-translate="courseSection-2-2"></p>
+            <p data-translate="courseSection-2-3"></p>
+            <p data-translate="courseSection-2-4"></p>
           </div>
           <div class="courseSection courseSection--3">
-            <!-- <p>
-              The previous year opened up my eyes and stirred up my curiosity
-              about web development. I was still so attracted by design and
-              video, I decided to join a versatile training in multimedia, to
-              widen my skills and specialize myself afterwards.
-            </p>
-            <p>
-              During these two years, I discovered and learnt a lot of things,
-              whether in front/back web development, graphic design, video or
-              even photography.
-            </p>
-            <p>
-              Very quickly, I decided to create my first portfolio during my
-              free time. This project was the trigger that made me discover a
-              real passion for interactive/creative development.
-            </p>
-            <p>
-              It made me understand that a website is not necessarily what
-              everyone think it is, but that it was so much more than that. But
-              also that it was possible to combine design, movement and
-              technologies to create more than just a web page.
-            </p>
-            <p>
-              Since that day, I’m continuously looking to improve, discover and
-              learn new technologies, in order to push through the boundaries of
-              each of my projects and turn my ideas into lines of code.
-            </p> -->
+            <p data-translate="courseSection-3-1"></p>
+            <p data-translate="courseSection-3-2"></p>
+            <p data-translate="courseSection-3-3"></p>
+            <p data-translate="courseSection-3-4"></p>
           </div>
         </div>
         <span class="title title--skills"></span>
         <div class="aboutWrapper aboutWrapper--4">
           <div class="skillsSection skillsSection--1">
-            <span>WEBDEV</span>
-            <li>HTML</li>
-            <li>CSS/SCSS</li>
-            <li>JavaScript</li>
-            <li>C</li>
-            <li>React</li>
-            <li>React Native</li>
-            <li>VUE.js</li>
-            <li>Next.js</li>
-            <li>Nuxt.js</li>
-            <li>GitHub</li>
-            <li>Three.js</li>
-            <li>Lottie</li>
+            <span data-translate="skillsSection-1-title"></span>
+            <li data-translate="skillsSection-1-list-1"></li>
+            <li data-translate="skillsSection-1-list-2"></li>
+            <li data-translate="skillsSection-1-list-3"></li>
+            <li data-translate="skillsSection-1-list-4"></li>
+            <li data-translate="skillsSection-1-list-5"></li>
+            <li data-translate="skillsSection-1-list-6"></li>
+            <!--<li data-translate="skillsSection-1-list-7"></li>
+            <li data-translate="skillsSection-1-list-8"></li>
+            <li data-translate="skillsSection-1-list-9"></li>
+            <li data-translate="skillsSection-1-list-10"></li>
+            <li data-translate="skillsSection-1-list-11"></li>
+            <li data-translate="skillsSection-1-list-12"></li>-->
           </div>
           <div class="skillsSection skillsSection--2">
-            <span>DESIGN</span>
-            <li>XD</li>
-            <li>Illustrator</li>
-            <li>Photoshop</li>
-            <li>Figma</li>
-            <li>Inkscape</li>
+            <span data-translate="skillsSection-2-title"></span>
+            <li data-translate="skillsSection-2-list-1"></li>
+            <li data-translate="skillsSection-2-list-2"></li>
+            <li data-translate="skillsSection-2-list-3"></li>
+            <li data-translate="skillsSection-2-list-4"></li>
+            <!--<li data-translate="skillsSection-2-list-5"></li>
+            <li data-translate="skillsSection-2-list-6"></li>
+            <li data-translate="skillsSection-2-list-7"></li>
+            <li data-translate="skillsSection-2-list-8"></li>
+            <li data-translate="skillsSection-2-list-9"></li>
+            <li data-translate="skillsSection-2-list-10"></li>
+            <li data-translate="skillsSection-2-list-11"></li>
+            <li data-translate="skillsSection-2-list-12"></li>-->
           </div>
           <div class="skillsSection skillsSection--3">
-            <span>MOTION</span>
-            <li>After Effects</li>
-            <li>Lightroom</li>
-            <li>Blender</li>
-            <li>Maya</li>
+            <span data-translate="skillsSection-3-title"></span>
+            <li data-translate="skillsSection-3-list-1"></li>
+            <li data-translate="skillsSection-3-list-2"></li>
+            <!--<li data-translate="skillsSection-3-list-3"></li>
+            <li data-translate="skillsSection-3-list-4"></li>
+            <li data-translate="skillsSection-3-list-5"></li>
+            <li data-translate="skillsSection-3-list-6"></li>
+            <li data-translate="skillsSection-3-list-7"></li>
+            <li data-translate="skillsSection-3-list-8"></li>
+            <li data-translate="skillsSection-3-list-9"></li>
+            <li data-translate="skillsSection-3-list-10"></li>
+            <li data-translate="skillsSection-3-list-11"></li>
+            <li data-translate="skillsSection-3-list-12"></li>-->
           </div>
         </div>
       </section>
@@ -406,7 +368,7 @@
     <div class="showreelRevealContainer">
       <video></video>
     </div>
-    <div class="musicWrapper">
+    <div class="musicWrapper" onclick="change_lang()">
       <canvas class="canvas--music" style="width: 50px; height: 25px"></canvas>
     </div>
     <canvas class="canvas canvas--main"></canvas>
