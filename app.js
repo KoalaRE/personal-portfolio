@@ -44068,3 +44068,20 @@
     })();
 })();
 //# sourceMappingURL=bundle.ed070500c303d23e3f9c.js.map
+
+matcher = window.matchMedia('(prefers-color-scheme: dark)');
+matcher.addListener(onUpdate);
+onUpdate();
+
+lightSchemeIcon = document.querySelector('link#light-scheme-icon');
+darkSchemeIcon = document.querySelector('link#dark-scheme-icon');
+
+function onUpdate() {
+  if (matcher.matches) {
+    lightSchemeIcon.remove();
+    document.head.append(darkSchemeIcon);
+  } else {
+    document.head.append(lightSchemeIcon);
+    darkSchemeIcon.remove();
+  }
+}

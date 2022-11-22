@@ -1399,20 +1399,20 @@ body {
 }
 
 #app .container--about .aboutWrapper--2 img {
-  width: 23%;
+  width: 8%;
   margin: 0 0 0 2%;
 }
 
 @media screen and (max-width: 1024px) {
   #app .container--about .aboutWrapper--2 img {
-    width: 40%;
+    width: 25%;
   }
 }
 
 @media screen and (max-width: 767px) {
   #app .container--about .aboutWrapper--2 img {
     margin: 0 0 25% 0;
-    width: 70%;
+    width: 55%;
   }
 }
 
