@@ -44069,19 +44069,34 @@
 })();
 //# sourceMappingURL=bundle.ed070500c303d23e3f9c.js.map
 
-matcher = window.matchMedia('(prefers-color-scheme: dark)');
-matcher.addListener(onUpdate);
-onUpdate();
+//Favicon for Light- and Darkmode
+'use strict';
 
-lightSchemeIcon = document.querySelector('link#light-scheme-icon');
-darkSchemeIcon = document.querySelector('link#dark-scheme-icon');
-
-function onUpdate() {
-  if (matcher.matches) {
-    lightSchemeIcon.remove();
-    document.head.append(darkSchemeIcon);
-  } else {
+function setupIcons() {
+  const lightSchemeIcon = document.querySelector('link#light-scheme-icon');
+  const darkSchemeIcon = document.querySelector('link#dark-scheme-icon');
+  
+  function setLight() {
     document.head.append(lightSchemeIcon);
     darkSchemeIcon.remove();
   }
+
+  function setDark() {
+    lightSchemeIcon.remove();
+    document.head.append(darkSchemeIcon);
+  }
+
+
+  const matcher = window.matchMedia('(prefers-color-scheme:dark)');
+  function onUpdate() {
+    if (matcher.matches) {
+      setDark();
+    } else {
+      setLight();
+    }
+  }
+  matcher.addListener(onUpdate);
+  onUpdate();
 }
+
+setupIcons();
