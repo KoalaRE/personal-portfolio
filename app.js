@@ -38029,7 +38029,7 @@
         mg = fg.load("./textures/alpha/alphaRing.jpg"),
         gg = fg.load("./textures/alpha/alphaTexture.jpg"),
         vg = fg.load("./textures/displacement/displacement.jpg"),
-        yg = fg.load("./textures/img/id.jpg"),
+        yg = fg.load("./textures/img/M2M_PIC_1.png"),
         _g = fg.load("./textures/img/astralys.jpg"),
         wg = fg.load("./textures/img/auriane.jpg"),
         xg = fg.load("./textures/img/folio2020.jpg"),
@@ -39626,25 +39626,25 @@
             (wy = !0),
             dy)
           ) {
-            case "id2021":
+            case "m2m":
               Jv.forEach((e) => {
-                e.innerHTML = "ID 2021";
+                e.innerHTML = "MISSION TO MINERVA";
               }),
                 (qv.innerHTML =
-                  "Immersions Digitales 2021 is a WebGl experience created in order to introduce the open days of the year from my technical faculty in Tarbes (France). We were three to work on this project, including a 3D modeler and two developers. As a developer, I imagined and developed a large part of 2D/3D animations and the micro interactions. We were awarded by an honorable mention on Awwwards.<br><br>Technologies used :<br>HTML, SCSS, JavaScript, Three.js, GLSL, GSAP"),
-                (Xv.src = "./textures/img/idWork.jpg"),
+                  "Mission to Minerva is a Game, which is still in Development"),
+                (Xv.src = "./textures/img/M2M_PIC_1.png"),
                 (Yv.innerHTML =
-                  '<a href="https://www.immersions-digitales.fr/" target="_blank">Launch Website</a>');
+                  '<a href="https://www.mission-to-minerva.net/" target="_blank">Launch Website</a>');
               break;
-            case "astralys":
+            case "pers_logo":
               Jv.forEach((e) => {
-                e.innerHTML = "ASTRALYS";
+                e.innerHTML = "PERSONAL LOGO";
               }),
                 (qv.innerHTML =
-                  "Astralys is a WebGl experience originally created as part of a university project. Its purpose is to show our solar system on scale, with several informations on the different elements that compose it. I was in charge of developing the whole website.<br><br>Technologies used :<br>HTML, CSS, JavaScript, Three.js"),
-                (Xv.src = "./textures/img/astralysWork.jpg"),
+                  "I mean it's my Logo, right?!"),
+                (Xv.src = "./textures/img/profile.jpg"),
                 (Yv.innerHTML =
-                  '<a href="https://astralys.thomalecornu.fr/" target="_blank">Launch Website</a>');
+                  '<a href="https://koalare.github.io/personal-portfolio/" target="_blank">Back to Website</a>');
               break;
             case "terreDeBois":
               Jv.forEach((e) => {
@@ -40988,8 +40988,8 @@
                       value: 0,
                       ease: "power3",
                     })));
-          }),
-          Ev.addEventListener("mouseenter", () => {
+          })),
+          /*Ev.addEventListener("mouseenter", () => {
             Sd.to(".projectName .mask--1 .char", 0.5, {
               opacity: 1,
               clipPath: "inset(0% 0% 0% 0%)",
@@ -43436,14 +43436,14 @@
                       value: 0,
                       ease: "power3",
                     })));
-          })),
+          })),*/
         Sv.addEventListener("click", () => {
-          (dy = "id2021"), X_();
+          (dy = "m2m"), X_();
         }),
         Tv.addEventListener("click", () => {
-          (dy = "astralys"), X_();
+          (dy = "pers_logo"), X_();
         }),
-        Ev.addEventListener("click", () => {
+        /*Ev.addEventListener("click", () => {
           (dy = "terreDeBois"), X_();
         }),
         Av.addEventListener("click", () => {
@@ -43496,7 +43496,7 @@
         }),
         Gv.addEventListener("click", () => {
           (dy = "motionIntro"), X_();
-        }),
+        }),*/
         zg.addEventListener("mousedown", () => {
           Z_();
         }),
